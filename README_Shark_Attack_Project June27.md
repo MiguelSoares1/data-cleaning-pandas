@@ -1,77 +1,68 @@
-
 # 🦈 Shark Attack Data Analysis
 
 ## 📌 Summary
 
-This project explores patterns and trends in hark attack incidents using real-world data. It investigates whether younger individuals are more frequently targeted and whether fatal attacks have decreased over time. The ultimate goal is to extract actionable insights and identify potential business applications derived from the data.
+This project explores patterns and trends in shark attack incidents using real-world data. It investigates whether younger individuals are more frequently targeted and whether fatal attacks have decreased over time. The ultimate goal is to extract actionable insights and identify potential business applications derived from the data.
 
-
+Link for presentation: https://prezi.com/view/3cwvgd5TMGh6kLop9UWl/
 
 ## 📂 Data Source
 
-The dataset used in this project originates from the [Global Shark Attack File (GSAF)](https://www.sharkattackfile.net/), a comprehensive, publicly available database that records global shark-human interaction events since the early 1900s. The dataset was obtained in CSV format and includes information such as:
+The dataset used in this project originates from the [Global Shark Attack File (GSAF)](https://www.sharkattackfile.net/incidentlog.htm), a comprehensive, publicly available database that records global shark-human interactions dating back to the early 1900s. The dataset was obtained in CSV format and includes information such as:
 
 - Date of attack  
 - Location  
 - Age of the individual  
-- Activity during the time of the attack  
-- Whether the attack was fatal or not  
+- Activity at the time of the attack  
+- Whether the attack was fatal  
 
 ---
 
 ## ❗ Key Issues with the Data
 
-- 🧩 **Inconsistent Formats**:  
-  - Date fields in mixed or non-standard formats  
-  - Activity and location often free-text, requiring cleaning
+- 🧩 **Inconsistent Formats**  
+  - Date fields appeared in mixed or non-standard formats  
+  - Activity and age were free-text and required cleaning
 
-- 🕳️ **Null or Missing Values**:  
-  - Several columns contain missing values, especially in "Age", "Activity", and "Fatal" status
+- 🕳️ **Null or Missing Values**  
+  - Several columns contained missing data, particularly "Age", "Activity", and "Fatal" status
 
-- 🔁 **Redundant or Irrelevant Columns**:  
-  - Multiple unnamed or duplicate columns that needed to be dropped
-
-- 🔤 **Incorrect Data Types**:  
+- 🔤 **Incorrect Data Types**  
   - Some numeric columns were read as text due to formatting issues
 
-- ✂️ **Outliers and Noise**:  
-  - Inconsistent descriptions in "Activity" such as “swimming”, “Swmming”, “swimmming” required normalization
-
-
-
-
-
-## 🧪 Hypotheses and Key Findings
-
-### Hypothesis 1: Younger people (under 30) are attacked more often, particularly during activities like swimming or surfing.
-
-**Findings**:
-- The age group **under 30** accounts for a significant proportion of attacks, especially during recreational water activities.
-- **Top activities** linked with this age group: Surfing, Swimming, and Spearfishing.
-- Visualizations confirmed that youth and high-activity engagement correlate with higher attack counts.
-
-### Hypothesis 2: Fatal shark attacks have decreased over time.
-
-**Findings**:
-- While **overall shark attacks have increased**, **fatal attacks have declined** steadily since the 1980s.
-- This could be due to **better medical response**, **public awareness**, and **technology (e.g., drones, alert systems)**.
-- Temporal trends and fatality ratio graphs clearly support this conclusion.
+- ✂️ **Outliers and Noise**  
+  - Inconsistent entries in "Activity" like “swimming”, “Swmming”, and “swimmming” required normalization
 
 ---
 
-## 🏢 Business Ideas Derived from Data
+## 🧪 Hypotheses and Key Findings
+
+### 🧠 Hypothesis 1: Younger people (under 30) are attacked more often, particularly during activities like swimming or surfing.
+
+**Findings**:
+- The **under-40 age group** accounts for a significant portion of shark attacks, especially during recreational water activities (from 2000 to 2019).  
+- **Top activities** for this group: Surfing, Swimming, and Spearfishing  
+- Visualizations confirm that youth and high-activity engagement correlate with higher attack counts.
+
+### 📉 Hypothesis 2: Fatal shark attacks have decreased over time.
+
+**Findings**:
+- Although **overall shark attacks have increased**, **fatal attacks have steadily declined** since 2000.  
+- This may be due to **improved medical response**, **greater public awareness**, and **technological advancements** (e.g., drones, alert systems).  
+- Temporal trend graphs support this conclusion.
+
+---
+
+## 🏢 Business Ideas Derived from the Data
 
 1. **Shark Activity Awareness App**  
-   → Based on age, location, and activity, give real-time safety scores for beachgoers.
+   → Offers real-time safety scores for beach visitors based on age, location, and activity.
 
 2. **Insurance Risk Models**  
-   → Insurance companies could use this data to build specialized coastal activity risk plans.
+   → Insurers can use this data to create specialized coastal activity risk profiles.
 
 3. **Smart Lifeguard Deployment**  
-   → City councils can allocate resources during high-risk months/activities.
+   → Local authorities can allocate lifeguard resources based on high-risk months and activities.
 
 4. **Educational Content for Tourism Companies**  
-   → Promote safer water practices targeting young tourists.
-
-
-
+   → Promote safer water practices targeting younger, high-risk tourists.
